@@ -48,19 +48,19 @@
           <div class="formbg">
             <div class="formbg-inner padding-horizontal--48">
               <span class="padding-bottom--15">Iniciar sesión</span>
-              <form id="stripe-login">
+              <form id="stripe-login formLogin" action="/main/index.html">
                 <div class="field padding-bottom--24">
                   <label for="email">Email</label>
-                  <input type="email" name="email">
+                  <input type="email" name="email" id="email" required>
                 </div>
                 <div class="field padding-bottom--24">
                   <div class="grid--50-50">
-                    <label for="password">Contraseña</label>
+                    <label for="password"  >Contraseña</label>
                     <div class="reset-pass">
                       <a href="#">¿Olvidaste tu contraseña?</a>
                     </div>
                   </div>
-                  <input type="password" name="password">
+                  <input type="password" name="password" id="pass" required>
                 </div>
                 <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
                   <label for="checkbox">
@@ -68,7 +68,7 @@
                   </label>
                 </div>
                 <div class="field padding-bottom--24">
-                  <input type="submit" name="submit" value="Continue">
+                  <input type="submit" name="submit" value="Continuar" id="continuar">
                 </div>
                 <div class="field">
                   <a class="ssolink" href="#">Crear cuenta a traves de Google</a>
@@ -92,4 +92,5 @@
   </div>
 </body>
 
+<script src="/main/js/index.js"></script>
 </html>
