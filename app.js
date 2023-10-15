@@ -5,12 +5,26 @@ const exphbs  = require('hbs');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const jwt = require('jsonwebtoken');
+const flash = require('connect-flash');
+const session = require('express-session');
+const passport = require('passport')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var signUpRouter = require('./routes/signup')
 
 var app = express();
+require('./config/passport')
+// Configura sesiones
+app.use(session({
+  secret: 'tu-secreto', // Cambia esto por una clave secreta real
+  resave: true,
+  saveUninitialized: true
+}));
+
+// Configura connect-flash
+app.use(passport.initialize())
+app.use(passport.session())
+app.use(flash());
 
 app.set('secretKey', 'dnNode');
 
@@ -26,7 +40,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/signup', signUpRouter)
 
 function verifyToken(req, res, next) {
   const authHeader = req.headers['authorization'];
@@ -47,6 +60,12 @@ function verifyToken(req, res, next) {
 }
 
 app.verifyToken = verifyToken;
+
+app.use((req, res, next) => {
+  res.locals.success_msg = req.flash('success_msg')
+  res.locals.error_msg = req.flash('error_msg')
+  res.locals.error = req.flash('error')
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

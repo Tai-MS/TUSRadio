@@ -83,10 +83,16 @@
                     <a href="service.html" class="nav-item nav-link">Manual</a>
                     <a href="package.html" class="nav-item nav-link">Contacto</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="profile">Perfil</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="profile">
+                            {{#if userEmail}}
+                                <p>{{userEmail}}</p>
+                            {{else}}
+                                <p>Perfil</p>
+                            {{/if}}
+                        </a>
                         <div class="dropdown-menu m-0">
-                            <a href="/signup" class="dropdown-item" id="cambiar">Crear Usuario</a>
-                            <a href="/login" class="dropdown-item" id="remove">Iniciar Sesion</a>
+                            <a href="/users/signup" class="dropdown-item" id="cambiar">Crear Usuario</a>
+                            <a href="/users/signin" class="dropdown-item" id="remove">Iniciar Sesion</a>
                         </div>
                     </div>
                 </div>
@@ -324,7 +330,7 @@
 
     <!-- Template Javascript -->
     <script src="/javascripts/main.js"></script>
-    <script src="javascripts/login.js"></script>
+    {{!-- <script src="javascripts/login.js"></script> --}}
 </body>
 
 </html>
