@@ -441,3 +441,9 @@ img
     padding-right: 0;
     border-right: none;
 }
+
+.heross-header {
+    background-color: #198754; /* Cambia esto al color primario deseado */
+    padding: 5rem 0; /* Ajusta el relleno superior e inferior según sea necesario */
+    margin-bottom: 5rem; /* Ajusta el margen inferior según sea necesario */
+  }

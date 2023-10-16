@@ -33,12 +33,13 @@ router.post(
 
 router.get("/index", (req, res) => {
   // res.render("index");
-  if(req.isAuthenticated()){
-    const userEmail = req.user.email
-    res.render('index', {userEmail: userEmail})
-  }else{
-    res.redirect('index')
-  }
+  // if(req.isAuthenticated()){
+  //   const userEmail = req.user.email
+  //   res.render('index', {userEmail: userEmail})
+  // }else{
+  //   res.redirect('index')
+  // }
+  res.redirect('index')
 });
 
 module.exports = router;
