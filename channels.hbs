@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>La ultima palabra - Lista de canales</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><a href="https://maps.app.goo.gl/ttMmofmx5AmNfR2h6"><i class="fa fa-map-marker-alt me-2"></i>Terciario de Urquiza</a></small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>radiodesa@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 bg-success">
+            <a href="" class="navbar-brand p-">
+                <h1 class="text-primary m-0"><i class="fa-solid fa-tower-cell"></i>La Ultima Palabra</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="/" class="nav-item nav-link active">Inicio</a>
+                    <a href="/channels" class="nav-item nav-link">Informacion</a>
+                    <a href="service.html" class="nav-item nav-link">Manual</a>
+                    <a href="package.html" class="nav-item nav-link">Contacto</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="profile">
+                            {{#if userEmail}}
+                                <p>{{userEmail}}</p>
+                            {{else}}
+                                <p>Perfil</p>
+                            {{/if}}
+                        </a>
+                        <div class="dropdown-menu m-0">
+                            <a href="/users/signup" class="dropdown-item" id="cambiar">Crear Usuario</a>
+                            <a href="/users/signin" class="dropdown-item" id="remove">Iniciar Sesion</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn btn-primary rounded-pill py-2 px-4">Ver Canales</a>
+            </div>
+        </nav>
+    <!-- Navbar & Hero End -->
+
+        {{!-- Lista de canales Start --}}
+    <div class="container-fluid py-4 mb-4 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="text-center pt-5 mt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Canales</h6>
+                    <h1 class="mb-5">Lista de canales educativos</h1>
+                </div>
+                
+                <div class="col-md-3 text-md-start">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://yt3.googleusercontent.com/ytc/APkrFKZzdTEZdhqQ9u8llUA5ic9wqoTnDx1ZaDUQR6Q7mA=s176-c-k-c0x00ffffff-no-rj" class="card-img-top" alt="Matemáticas profe Alex">
+                        <div class="card-body">
+                            <h5 class="card-title">Matemáticas profe Alex</h5>
+                            <p class="card-text">En este canal encontrarás cursos de matemáticas y física explicados de manera sencilla, en los que podrás aprender cada tema paso a paso...</p>
+                            <a href="https://www.youtube.com/@MatematicasprofeAlex/featured" class="btn btn-primary">Ir al canal</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-md-start">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://yt3.googleusercontent.com/ytc/APkrFKadpIYqD1Feng_An1dDgvmn3JbIrndUl-rCSGH-9Q=s176-c-k-c0x00ffffff-no-rj" class="card-img-top" alt="Ram Talks">
+                        <div class="card-body">
+                            <h5 class="card-title">Ram Talks</h5>
+                            <p class="card-text">Ram Talks es un sitio donde el espectador está invitado a reflexionar desde el pensamiento crítico, el rigor filosófico y el análisis científico... </p>
+                            <a href="https://www.youtube.com/@RamTalks/featured" class="btn btn-primary">Ir al canal</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-md-e">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://yt3.googleusercontent.com/ytc/APkrFKY8H5_g2PW55onQFGQp673I4l6nlth14xRE291Vsg=s176-c-k-c0x00ffffff-no-rj" class="card-img-top" alt="Jaime Altozano">
+                        <div class="card-body">
+                            <h5 class="card-title">Jaime Altozano</h5>
+                            <p class="card-text pt-4 pb-4">Divulgador de música y tecnología musical, Youtuber, creador de musihacks.com...</p>
+                            <a href="https://www.youtube.com/@JaimeAltozano/featured" class="btn btn-primary">Ir al canal</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-md-e">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://yt3.googleusercontent.com/jHpWdf9qWNdrCjxfQxCxR0aiYY9Y1IO7s6Jwlk-OgKxS8nzjEMffakE6mdOdp2u22R3130U0nQ=s176-c-k-c0x00ffffff-no-rj" class="card-img-top" alt="Soy Dalto">
+                        <div class="card-body">
+                            <h5 class="card-title">Soy Dalto</h5>
+                            <p class="card-text">Dalto te va a mostrar la programación y el desarrollo de una forma distinta, aprendé a programar con mis cursos de programación y desarrollo web...</p>
+                            <a href="https://www.youtube.com/@soydalto/featured" class="btn btn-primary">Ir al canal</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    {{!-- Lista de canales End --}}
+
+    {{!-- Paginación Start --}}
+
+        <nav aria-label="Paginación example">
+        <ul class="pagination mx-auto">
+            <li class="page-item">
+            <a class="page-link me-2">Anterior</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+            <a class="page-link ms-2" href="#">Siguiente</a>
+            </li>
+        </ul>
+        </nav>
+
+    {{!-- Paginación End --}}
+
+    <!-- Canales ONLINE -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center pt-5 mt-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Canales On line</h6>
+                <h1 class="mb-5">Los en vivo más vistos de la semana</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <iframe width="300" height="315" src="https://www.youtube.com/embed/oCH_gfRQrRA?si=wwGxcveW0W9MfBlV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h5 class="mb-2">Telefe Rosario</h5>
+                    <p class="mb-2">Canal lider en la provincia de Rosario, con las últimas noticias en todos los rubros.</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <iframe width="300" height="315" src="https://www.youtube.com/embed/avly0uwZzOE?si=Pn8ACoGb25v8ynn-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h5 class="mb-2">Crónica</h5>
+                    <p class="mb-2">Canal lider de argentina, creador de un estilo informatico único con placas rojas.</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <iframe width="300" height="315" src="https://www.youtube.com/embed/8GmR9H2iH8Q?si=vSr0L_AH1bRuXm4y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h5 class="mb-2">RTVE Noticias</h5>
+                    <p class="mb-2">Canal de noticias Español 24Hs, información de última hora y de todo el mundo.</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <iframe width="300" height="315" src="https://www.youtube.com/embed/cb12KmMMDJA?si=COMuCEcCnvP0LkqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h5 class="mb-2">TN Noticias</h5>
+                    <p class="mb-2">Mirá la programación de Todo Noticias durante las 24hs del día en la Argentina y en el mundo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Canales ONLINE FIN -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center text-md-start mb-3 mb-md-0 pt-5 mt-5">
+                &copy; <a class="border-bottom" href="#">La Ultima Palabra</a>
+                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+            </div>
+            <div class="col-md-3 text-center pt-5 mt-5">
+                <div class="footer-menu">
+                    <a href="#">Inicio</a>
+                    <a href="#">Acerca De</a>
+                    <a href="https://www.terciariourquiza.edu.ar/">Escuela Urquiza</a>
+                </div>
+            </div>
+            <div class="col text-md-end mb-3 mt-3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.3340782850714!2d-60.65315459999999!3d-32.942188099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab40ca7560ef%3A0xa4c4f77ae97baa0e!2sEscuela%20Superior%20De%20Comercio%20N%C2%B0%2049%20%22Justo%20Jose%20De%20Urquiza%22!5e0!3m2!1ses!2sar!4v1697499648802!5m2!1ses!2sar" width="500" height="200" style="border: 10px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/javascripts/main.js"></script>
+    <script src="javascripts/login.js"></script>
+
+</body>
+
+</html>
