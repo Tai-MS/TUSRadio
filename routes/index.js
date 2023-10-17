@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
     const userEmail = req.user.email
     res.render('index', {userEmail: userEmail})
   }else{
-    res.redirect('index')
+    res.render('index')
   }
   // res.render('index')
 });

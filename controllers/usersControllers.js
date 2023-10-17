@@ -37,7 +37,7 @@ module.exports = {
       newUser.password = await newUser.encryptPassword(password);
       await newUser.save();
       req.flash("success msg", "Te registraste con exito");
-      res.redirect("/");
+      res.render("login");
     }
   },
 };
