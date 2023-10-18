@@ -12,6 +12,8 @@ const passport = require('passport')
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var channelsRouter= require('./routes/channels');
+var channels2Router= require('./routes/channels-2');
+var channels3Router= require('./routes/channels-3');
 var aboutRouter = require('./routes/about')
 
 var app = express();
@@ -43,6 +45,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/channels', channelsRouter);
+app.use('/channels-2', channels2Router);
+app.use('/channels-3', channels3Router);
 app.use('/about', aboutRouter)
 
 function verifyToken(req, res, next) {

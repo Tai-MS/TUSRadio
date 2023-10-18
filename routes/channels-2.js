@@ -4,9 +4,9 @@ var router = express.Router()
 router.get('/', (req, res) =>{
     if(req.isAuthenticated()){
         const userEmail = req.user.email
-        res.render('channels', {userEmail: userEmail})
+        res.render('channels-2', {userEmail: userEmail})
       }else{
-        res.render('channels')
+        res.render('channels-2')
       }
 })
 

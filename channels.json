@@ -1,0 +1,50 @@
+{
+    "channel_1": {
+        "img": "https://yt3.googleusercontent.com/ytc/APkrFKZzdTEZdhqQ9u8llUA5ic9wqoTnDx1ZaDUQR6Q7mA=s176-c-k-c0x00ffffff-no-rj",
+        "name": "Matemáticas profe Alex",
+        "text": "En este canal encontrarás cursos de matemáticas y física explicados de manera sencilla, en los que podrás aprender cada tema paso a paso...",
+        "url": "https://www.youtube.com/@MatematicasprofeAlex/featured"
+    },
+    "channel_2": {
+        "img": "https://yt3.googleusercontent.com/ytc/APkrFKadpIYqD1Feng_An1dDgvmn3JbIrndUl-rCSGH-9Q=s176-c-k-c0x00ffffff-no-rj",
+        "name": "Ram Talks",
+        "text": "Ram Talks es un sitio donde el espectador está invitado a reflexionar desde el pensamiento crítico, el rigor filosófico y el análisis científico...",
+        "url": "https://www.youtube.com/@RamTalks/featured"
+    },
+    "channel_3": {
+        "img": "https://yt3.googleusercontent.com/ytc/APkrFKZzdTEZdhqQ9u8llUA5ic9wqoTnDx1ZaDUQR6Q7mA=s176-c-k-c0x00ffffff-no-rj",
+        "name": "Jaime Altozano",
+        "text": "Divulgador de música y tecnología musical, Youtuber, creador de musihacks.com...",
+        "url": "https://www.youtube.com/@JaimeAltozano/featured"
+    },
+    "channel_4": {
+        "img": "https://yt3.googleusercontent.com/jHpWdf9qWNdrCjxfQxCxR0aiYY9Y1IO7s6Jwlk-OgKxS8nzjEMffakE6mdOdp2u22R3130U0nQ=s176-c-k-c0x00ffffff-no-rj",
+        "name": "Soy Dalto",
+        "text": "Dalto te va a mostrar la programación y el desarrollo de una forma distinta, aprendé a programar con mis cursos de programación y desarrollo web...",
+        "url": "https://www.youtube.com/@soydalto/featured"
+    },
+    "channel_5": {
+        "img": "https://yt3.googleusercontent.com/PyeIRccYrFc_L7qI6rliDoP01mGIrcAV7d9CvEEqHTi4SXXAR8jmF-5HPiaxKLSuPf9oXJqr=s176-c-k-c0x00ffffff-no-rj",
+        "name": "Mr. Rayden",
+        "text": "Déjame contarte las mejores historias de la Historia, sorprenderte con lo inesperado, despertar tu curiosidad, mostrarte  futuros utópicos y fabulosos...",
+        "url": "https://www.youtube.com/@MrRayden/featured"
+    },
+    "channel_6": {
+        "img": "https://yt3.googleusercontent.com/ytc/APkrFKb6e_NebiInRT1QvTKXa5BV70tzV9u2lDiMA0OCTw=s176-c-k-c0x00ffffff-no-rj",
+        "name": "Fazt",
+        "text": "Fazt es un canal en donde podrás encontrar una variedad de videos de programación, desarrollo Web y muchos otros temas relacionados al mundo de la informática...",
+        "url": "https://www.youtube.com/@FaztTech/featured"
+    },
+    "channel_7": {
+        "img": "https://yt3.googleusercontent.com/KEex1oxGs68FOHEg_Lbnwgp00LrL8cHhzzzfXRKKSUEMBBnO2tKifIl1raL2QYkvhwDojKBl=s176-c-k-c0x00ffffff-no-rj",
+        "name": "Nate Gentile",
+        "text": "Nate Gentile es un equipo que créa contenido sobre informática para entretener, enseñar y aconsejar a la hora de comprar tu próximo dispositivo...",
+        "url": "https://www.youtube.com/@NateGentile7/featured"
+    },
+    "channel_8": {
+        "img": "https://yt3.googleusercontent.com/ytc/APkrFKZnYL-iNY0ZzxfqWzhBhJU98hjf26C2XRt6ImQ-Tw=s176-c-k-c0x00ffffff-no-rj",
+        "name": "QuantumFracture",
+        "text": "¡Ciencia! ¡y con animaciones! El lado más loco Y REAL del Universo...",
+        "url": "¡Ciencia! ¡y con animaciones! El lado más loco Y REAL del Universo..."
+    }
+}
