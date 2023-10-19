@@ -14,7 +14,8 @@ var usersRouter = require('./routes/users');
 var channelsRouter= require('./routes/channels');
 var channels2Router= require('./routes/channels-2');
 var channels3Router= require('./routes/channels-3');
-var aboutRouter = require('./routes/about')
+var aboutRouter = require('./routes/about');
+var informationRouter = require('./routes/information')
 
 var app = express();
 require('./config/passport')
@@ -47,7 +48,8 @@ app.use('/users', usersRouter);
 app.use('/channels', channelsRouter);
 app.use('/channels-2', channels2Router);
 app.use('/channels-3', channels3Router);
-app.use('/about', aboutRouter)
+app.use('/about', aboutRouter);
+app.use ('/information', informationRouter)
 
 function verifyToken(req, res, next) {
   const authHeader = req.headers['authorization'];
