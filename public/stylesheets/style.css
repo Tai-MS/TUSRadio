@@ -447,7 +447,11 @@ img .back-to-top {
 
 .nosotrosIMG{
     width: auto;
-    height: auto;
+    height: 350px;
+}
+
+.cuadro{
+  /* height: 200px; */
 }
 
 #insti{
